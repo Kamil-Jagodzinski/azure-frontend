@@ -67,7 +67,7 @@ const UserCard = (props) => {
                         sx={{ height: '11vmin', alignItems: 'center' }}
                     >
                         <Avatar
-                            src={props.user.avatar_url}
+                            src={props.user.avatarUrl}
                             alt={props.user.login}
                             sx={{
                                 width: '10vmin',
@@ -124,7 +124,7 @@ const UserCard = (props) => {
 
                     <Stack sx={{ ml: 3, my: 2 }}>
                         <Link
-                            href={props.user.html_url}
+                            href={props.user.htmlUrl}
                             target="_blank"
                             variant="body2"
                             underline="hover"
@@ -147,7 +147,7 @@ const UserCard = (props) => {
                             {'Following: ' + props.user.following}
                         </Typography>
                         <Typography variant="body2">
-                            {'Last activity: ' + props.user.updated_at}
+                            {'Last activity: ' + props.user.updatedAt}
                         </Typography>
                     </Stack>
                 </Box>

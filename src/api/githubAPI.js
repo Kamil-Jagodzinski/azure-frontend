@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = `http://localhost:8080/api/github`;
+const BASE_URL = `https://kj-project-backend.azurewebsites.net/api/github`;
 
 const searchUsers = async (query) => {
   try {
@@ -69,15 +69,15 @@ const selectUser = async (user) => {
     console.log(userData);
 
     const userMetrics = {
-      avatar_url: userData.avatarUrl,
+      avatarUrl: userData.avatarUrl,
       login: userData.login,
       name: userData.name,
-      html_url: userData.htmlUrl,
+      htmlUrl: userData.htmlUrl,
       bio: userData.bio,
       followers: userData.followers,
       following: userData.following,
-      public_repos: userData.publicRepos,
-      updated_at: userData.updatedAt,
+      publicRepos: userData.publicRepos,
+      updatedAt: userData.updatedAt,
     };
 
     return userMetrics;
